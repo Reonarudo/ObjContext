@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CA6B042651724C9400AF671 /* libPods-CtxFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87824CA0C824877E2DAABD1 /* libPods-CtxFramework.a */; };
 		2A0B373C1BF37A8400C38226 /* Cntxt.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0B373A1BF37A8400C38226 /* Cntxt.h */; };
 		2A0B373D1BF37A8400C38226 /* Cntxt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B373B1BF37A8400C38226 /* Cntxt.m */; };
 		2A0B37421BF3D12500C38226 /* ObjectReadFromJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0B37401BF3D12500C38226 /* ObjectReadFromJSON.h */; };
@@ -36,13 +37,6 @@
 		2ACAFD801B975AD000F221C3 /* Adaptation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAFD7A1B975AD000F221C3 /* Adaptation.m */; };
 		2ACAFD821B975AD000F221C3 /* AdaptationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAFD7C1B975AD000F221C3 /* AdaptationManager.m */; };
 		2ACAFE0B1B9CD2FD00F221C3 /* c2amm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAFE0A1B9CD2FD00F221C3 /* c2amm.plist */; };
-		BB37031D1C1DDCE10077987C /* WoolBlockHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3703161C1DDCE10077987C /* WoolBlockHelper.h */; };
-		BB37031E1C1DDCE10077987C /* WoolObjCEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3703171C1DDCE10077987C /* WoolObjCEncoding.h */; };
-		BB37031F1C1DDCE10077987C /* WoolObjCEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3703181C1DDCE10077987C /* WoolObjCEncoding.m */; };
-		BB3703201C1DDCE10077987C /* WSSBlockInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = BB3703191C1DDCE10077987C /* WSSBlockInvocation.h */; };
-		BB3703211C1DDCE10077987C /* WSSBlockInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB37031A1C1DDCE10077987C /* WSSBlockInvocation.m */; };
-		BB3703221C1DDCE10077987C /* WSSBlockSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = BB37031B1C1DDCE10077987C /* WSSBlockSignature.h */; };
-		BB3703231C1DDCE10077987C /* WSSBlockSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = BB37031C1C1DDCE10077987C /* WSSBlockSignature.m */; };
 		BBC527071C1631C700046D8F /* TM.h in Headers */ = {isa = PBXBuildFile; fileRef = BBC527051C1631C700046D8F /* TM.h */; };
 		BBC527081C1631C700046D8F /* TM.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC527061C1631C700046D8F /* TM.m */; };
 /* End PBXBuildFile section */
@@ -73,10 +67,6 @@
 		2A2043481BA0220300AC11F4 /* ContextMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextMonitor.m; sourceTree = "<group>"; };
 		2A20434D1BA0485C00AC11F4 /* ContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextManager.h; sourceTree = "<group>"; };
 		2A20434E1BA0485C00AC11F4 /* ContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextManager.m; sourceTree = "<group>"; };
-		2A36F4F21BC040B10024842B /* AppContextCodeLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppContextCodeLocation.h; sourceTree = "<group>"; };
-		2A36F4F31BC040B10024842B /* AppContextCodeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppContextCodeLocation.m; sourceTree = "<group>"; };
-		2A36F4F61BC040F30024842B /* EnvContextCodeLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvContextCodeLocation.h; sourceTree = "<group>"; };
-		2A36F4F71BC040F30024842B /* EnvContextCodeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvContextCodeLocation.m; sourceTree = "<group>"; };
 		2A36F4FA1BC046F60024842B /* CtxFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CtxFoundation.h; sourceTree = "<group>"; };
 		2A36F4FB1BC046F60024842B /* CtxFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CtxFoundation.m; sourceTree = "<group>"; };
 		2ACAFD5D1B975AB300F221C3 /* CtxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CtxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,15 +80,11 @@
 		2ACAFD7B1B975AD000F221C3 /* AdaptationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdaptationManager.h; sourceTree = "<group>"; };
 		2ACAFD7C1B975AD000F221C3 /* AdaptationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdaptationManager.m; sourceTree = "<group>"; };
 		2ACAFE0A1B9CD2FD00F221C3 /* c2amm.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = c2amm.plist; sourceTree = "<group>"; };
-		BB3703161C1DDCE10077987C /* WoolBlockHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoolBlockHelper.h; sourceTree = "<group>"; };
-		BB3703171C1DDCE10077987C /* WoolObjCEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoolObjCEncoding.h; sourceTree = "<group>"; };
-		BB3703181C1DDCE10077987C /* WoolObjCEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoolObjCEncoding.m; sourceTree = "<group>"; };
-		BB3703191C1DDCE10077987C /* WSSBlockInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSSBlockInvocation.h; sourceTree = "<group>"; };
-		BB37031A1C1DDCE10077987C /* WSSBlockInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSSBlockInvocation.m; sourceTree = "<group>"; };
-		BB37031B1C1DDCE10077987C /* WSSBlockSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSSBlockSignature.h; sourceTree = "<group>"; };
-		BB37031C1C1DDCE10077987C /* WSSBlockSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSSBlockSignature.m; sourceTree = "<group>"; };
+		AEC3B099B0B9DCFEAA2F7F99 /* Pods-CtxFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CtxFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CtxFramework/Pods-CtxFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		BBC527051C1631C700046D8F /* TM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TM.h; sourceTree = "<group>"; };
 		BBC527061C1631C700046D8F /* TM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TM.m; sourceTree = "<group>"; };
+		E87824CA0C824877E2DAABD1 /* libPods-CtxFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CtxFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BD26452C325339A920102F /* Pods-CtxFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CtxFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-CtxFramework/Pods-CtxFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA6B042651724C9400AF671 /* libPods-CtxFramework.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +192,8 @@
 				2ACAFD5F1B975AB300F221C3 /* CtxFramework */,
 				2ACAFD6C1B975AB300F221C3 /* CtxFrameworkTests */,
 				2ACAFD5E1B975AB300F221C3 /* Products */,
+				A59A62757E3F4DCD81B9FCE8 /* Pods */,
+				B5EAFE6B5961F55B09AC36F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,10 +216,6 @@
 				2A0B37371BF2458800C38226 /* ContextMonitor */,
 				2A0B37361BF2457E00C38226 /* AdaptationManager */,
 				2A0B37351BF2457600C38226 /* ContextManager */,
-				2A36F4F61BC040F30024842B /* EnvContextCodeLocation.h */,
-				2A36F4F71BC040F30024842B /* EnvContextCodeLocation.m */,
-				2A36F4F21BC040B10024842B /* AppContextCodeLocation.h */,
-				2A36F4F31BC040B10024842B /* AppContextCodeLocation.m */,
 				2ACAFD601B975AB300F221C3 /* Supporting Files */,
 				2ACAFD621B975AB300F221C3 /* CtxFramework.h */,
 			);
@@ -263,28 +248,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A59A62757E3F4DCD81B9FCE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEC3B099B0B9DCFEAA2F7F99 /* Pods-CtxFramework.debug.xcconfig */,
+				F8BD26452C325339A920102F /* Pods-CtxFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5EAFE6B5961F55B09AC36F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E87824CA0C824877E2DAABD1 /* libPods-CtxFramework.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB3703141C1DDCA30077987C /* Util */ = {
 			isa = PBXGroup;
 			children = (
 				BBC527051C1631C700046D8F /* TM.h */,
 				BBC527061C1631C700046D8F /* TM.m */,
-				BB3703151C1DDCBA0077987C /* WoolBlockInvocation */,
 			);
 			name = Util;
-			sourceTree = "<group>";
-		};
-		BB3703151C1DDCBA0077987C /* WoolBlockInvocation */ = {
-			isa = PBXGroup;
-			children = (
-				BB3703161C1DDCE10077987C /* WoolBlockHelper.h */,
-				BB3703171C1DDCE10077987C /* WoolObjCEncoding.h */,
-				BB3703181C1DDCE10077987C /* WoolObjCEncoding.m */,
-				BB3703191C1DDCE10077987C /* WSSBlockInvocation.h */,
-				BB37031A1C1DDCE10077987C /* WSSBlockInvocation.m */,
-				BB37031B1C1DDCE10077987C /* WSSBlockSignature.h */,
-				BB37031C1C1DDCE10077987C /* WSSBlockSignature.m */,
-			);
-			name = WoolBlockInvocation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,15 +283,11 @@
 			files = (
 				2A0B374E1BF3EA0500C38226 /* BehaviorMethod.h in Headers */,
 				2A0B375D1BFF94A900C38226 /* ObjectiveContextualizer.h in Headers */,
-				BB3703201C1DDCE10077987C /* WSSBlockInvocation.h in Headers */,
-				BB3703221C1DDCE10077987C /* WSSBlockSignature.h in Headers */,
 				2A2043491BA0220300AC11F4 /* ContextMonitor.h in Headers */,
 				BBC527071C1631C700046D8F /* TM.h in Headers */,
 				2A0B374A1BF3E9E600C38226 /* BehaviorClass.h in Headers */,
 				2A20434F1BA0485C00AC11F4 /* ContextManager.h in Headers */,
 				2A0B37461BF3E9C800C38226 /* Behavior.h in Headers */,
-				BB37031D1C1DDCE10077987C /* WoolBlockHelper.h in Headers */,
-				BB37031E1C1DDCE10077987C /* WoolObjCEncoding.h in Headers */,
 				2ACAFD631B975AB300F221C3 /* CtxFramework.h in Headers */,
 				2A0B37421BF3D12500C38226 /* ObjectReadFromJSON.h in Headers */,
 				2A0B373C1BF37A8400C38226 /* Cntxt.h in Headers */,
@@ -319,10 +302,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ACAFD731B975AB300F221C3 /* Build configuration list for PBXNativeTarget "CtxFramework" */;
 			buildPhases = (
+				571AE94BFF7E019ACC73AF0A /* Check Pods Manifest.lock */,
 				2ACAFD581B975AB200F221C3 /* Sources */,
 				2ACAFD591B975AB200F221C3 /* Frameworks */,
 				2ACAFD5A1B975AB200F221C3 /* Headers */,
 				2ACAFD5B1B975AB200F221C3 /* Resources */,
+				D72782C3ACEAAFE4547A20A2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,7 +342,7 @@
 		2ACAFD541B975AB200F221C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Leonardo Marques";
 				TargetAttributes = {
 					2ACAFD5C1B975AB200F221C3 = {
@@ -406,6 +391,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		571AE94BFF7E019ACC73AF0A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D72782C3ACEAAFE4547A20A2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CtxFramework/Pods-CtxFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2ACAFD581B975AB200F221C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -415,16 +433,13 @@
 				2A0B374B1BF3E9E600C38226 /* BehaviorClass.m in Sources */,
 				2ACAFD821B975AD000F221C3 /* AdaptationManager.m in Sources */,
 				2A2043501BA0485C00AC11F4 /* ContextManager.m in Sources */,
-				BB3703231C1DDCE10077987C /* WSSBlockSignature.m in Sources */,
 				2A0B373D1BF37A8400C38226 /* Cntxt.m in Sources */,
 				2A36F4FD1BC046F60024842B /* CtxFoundation.m in Sources */,
-				BB3703211C1DDCE10077987C /* WSSBlockInvocation.m in Sources */,
 				2A20434A1BA0220300AC11F4 /* ContextMonitor.m in Sources */,
 				2A0B37431BF3D12500C38226 /* ObjectReadFromJSON.m in Sources */,
 				2A0B374F1BF3EA0500C38226 /* BehaviorMethod.m in Sources */,
 				2ACAFD801B975AD000F221C3 /* Adaptation.m in Sources */,
 				2A0B375E1BFF94A900C38226 /* ObjectiveContextualizer.m in Sources */,
-				BB37031F1C1DDCE10077987C /* WoolObjCEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +489,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -542,6 +558,7 @@
 		};
 		2ACAFD741B975AB300F221C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC3B099B0B9DCFEAA2F7F99 /* Pods-CtxFramework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -552,6 +569,7 @@
 				INFOPLIST_FILE = CtxFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.reonarudo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -560,6 +578,7 @@
 		};
 		2ACAFD751B975AB300F221C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BD26452C325339A920102F /* Pods-CtxFramework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -570,6 +589,7 @@
 				INFOPLIST_FILE = CtxFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.reonarudo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -589,6 +609,7 @@
 				);
 				INFOPLIST_FILE = CtxFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.reonarudo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -602,6 +623,7 @@
 				);
 				INFOPLIST_FILE = CtxFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "info.reonarudo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

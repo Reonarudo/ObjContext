@@ -21,13 +21,11 @@
 
     NSNumber* nActiveContexts;
     //
-    //    CodeLocation* adaptationPoint;
     //
     IMP __originalMethod_Imp;
     //
     //    NSNumber* delimitationConfinement;
     //
-    //    CodeLocation* instanceGetterLocation;
     //
     //    NSNumber* behaviorBindingTime;
     //
@@ -307,7 +305,7 @@
 -(void)adaptInstanceMethodImplementation:(SEL)s fromClass:(Class)c at:(NSNumber*)adaptComp{
     //Method m=class_getInstanceMethod(c, s);
     //NSLog(@"Adapting :%s", sel_getName(s));
-    Method nm=[((NSValue*)[[self nBehavior] getBehavior]) pointerValue];
+    //Method nm=[((NSValue*)[[self nBehavior] getBehavior]) pointerValue];
     Method m=class_getInstanceMethod(c, s);
     IMP newImpl;
     switch (adaptComp.intValue) {
@@ -367,13 +365,13 @@ NSInteger _add_Method_behavior_beginning(id self, SEL _cmd){
     }
     Adaptation* a0=adpts[0];
     returnValue=((NSInteger(*)(id,SEL))a0.originalBehavior)(self,_cmd);
-    //NSLog(@"Executed adapted method in %@",@([TM time]-startT));
+    NSLog(@"Executed adapted method in %@",@([TM time]-startT));
     return returnValue;
 }
 
 
 NSInteger _add_Method_behavior_end(id selff, SEL _cmd,...){
-    va_list args, arguments;
+    va_list args;
     va_start(args, _cmd);
 //    
 //    va_copy(args, arguments);
@@ -399,7 +397,7 @@ NSInteger _replace_Method_behavior(id self, SEL _cmd){
     Adaptation* a=adpts[[adpts count]-1];
     Method m=[((NSValue*)[[a nBehavior] getBehavior]) pointerValue];
     NSInteger returnValue=((NSInteger(*)(id,SEL))method_getImplementation(m))(self,_cmd);
-    //NSLog(@"Executed adapted method in %@",@([TM time]-startT));
+    NSLog(@"Executed adapted method in %@",@([TM time]-startT));
     return returnValue;
 }
 
