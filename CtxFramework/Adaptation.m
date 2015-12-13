@@ -371,31 +371,10 @@ NSInteger _add_Method_behavior_beginning(id self, SEL _cmd){
     return returnValue;
 }
 
-- (id)invocationBlock
-{
-    return [^void (void * arg1, ...){
-        [self setRetainsArguments:YES];
-        va_list args;
-        va_start(args, arg1);
-        void * arg = arg1;
-        NSUInteger numArguments = [blockSignature numberOfArguments];
-        for( NSUInteger idx = 1; idx < numArguments; idx++ ){
-            
-            [self setArgument:&arg atIndex:idx];
-            
-            arg = va_arg(args, void *);
-        }
-        va_end(args);
-        
-        [self invoke];
-        
-    } copy];
-}
 
-
-NSInteger _add_Method_behavior_end(id selff, SEL _cmd){
-//    va_list args, arguments;
-//    va_start(args, _cmd);
+NSInteger _add_Method_behavior_end(id selff, SEL _cmd,...){
+    va_list args, arguments;
+    va_start(args, _cmd);
 //    
 //    va_copy(args, arguments);
 //    CFTimeInterval startT=[TM time];
@@ -403,12 +382,12 @@ NSInteger _add_Method_behavior_end(id selff, SEL _cmd){
     NSArray* adpts=[[AdaptationManager manager] getAdaptationsForPath:[NSString stringWithFormat:@"%@/%s",[selff class], sel_getName(_cmd)]];
     NSInteger returnValue;
     Adaptation* a0=adpts[0];
-    returnValue=((NSInteger(*)(id,SEL, ...))a0.originalBehavior)(selff, _cmd);
+    returnValue=((NSInteger(*)(id,SEL, ...))a0.originalBehavior)(selff, _cmd,args);
 //    for (Adaptation* a in adpts) {
 //        Method m=[((NSValue*)[[a nBehavior] getBehavior]) pointerValue];
 //        returnValue=((NSInteger(*)(id,SEL, ...))method_getImplementation(m))(selff,_cmd,arguments);
 //    }
-    //va_end(args);
+va_end(args);
     //NSLog(@"Executed adapted method in %@",@([TM time]-startT));
     return returnValue;
 }
